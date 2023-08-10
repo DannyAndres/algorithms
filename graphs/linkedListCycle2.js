@@ -63,6 +63,8 @@ const hasCycle = (start) => {
     if (fast === slow) break;
   }
 
+  // if after the first while they both are not equal
+  // there is no cycle
   if (fast !== slow) return null;
 
   while (pointer !== slow) {
